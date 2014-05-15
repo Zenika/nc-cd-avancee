@@ -2,6 +2,8 @@ nc-cd-avancee
 =============
 flyway maven workshop step by step
 ===================================
+0-  mvn clean package
+
 1-  mvn flyway:clean
 
 2-  mvn flyway:info
@@ -17,6 +19,22 @@ create your own scripts
 5-  mvn tomcat7:run
 
 observer the table schema_version
+
+
+flyway gradle workshop step by step
+===================================
+1-  gradle flywayClean
+
+2-  gradle flywayInfo
+
+see the result
+
+3-  gradle flywayValidate 
+
+5-  gradle flywayMigrate
+
+observer the table schema_version
+
 
 liquibase maven workshop step by step
 ===================================
@@ -37,17 +55,3 @@ create your own scripts
 6-  mvn tomcat7:run
 
 observe the table DBCHANGELOGS
-
-flyway gradle workshop step by step
-===================================
-1-  gradle flywayClean
-
-2-  gradle flywayInfo
-
-see the result
-
-3-  gradle flywayValidate 
-
-5-  gradle flywayMigrate
-
-observer the table schema_version
