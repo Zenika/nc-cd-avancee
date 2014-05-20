@@ -6,7 +6,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.h2database:h2:1.3.170'
+        classpath 'mysql:mysql-connector-java:5.1.30'
         classpath 'org.flywaydb:flyway-gradle-plugin:3.0'
     }
 }
@@ -20,6 +20,7 @@ repositories {
         mavenCentral()
 }
 flyway {
-    url = 'jdbc:h2:file:zenika/flyway-gradle'
-    user = 'sa'
+    url = 'jdbc:mysql://localhost:3306/zenika'
+    user = 'root'
+    password = 'zenika'
 }
