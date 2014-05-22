@@ -40,18 +40,20 @@ liquibase maven workshop step by step
 ===================================
 1-  mvn liquibase:dropAll
 
-2-  mvn liquibase:status
+2- mvn clean package
+
+3-  mvn liquibase:status
 
 see the result
 
-3-  mvn liquibase:update 
+4-  mvn liquibase:update 
 
-4-  mvn liquibase:rollback -Dliquibase.rollbackCount=3
+5-  mvn liquibase:rollback -Dliquibase.rollbackCount=3
 
 create your own scripts
 
-5   mvn liquibase:status
+6   mvn liquibase:status
 
-6-  mvn tomcat7:run
+7-  mvn tomcat7:run
 
 observe the table DBCHANGELOGS
